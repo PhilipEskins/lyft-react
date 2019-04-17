@@ -1,5 +1,6 @@
 import React from 'react';
 import lyft from '../assets/img/lyft.jpg';
+import { Link } from 'react-router-dom';
 
 function SplashNav() {
 
@@ -45,7 +46,7 @@ function SplashNav() {
         <a className="linkStyle" href="#">lyft</a>
       </div>
       <div style={otherLinks}>
-        <a href="#" className="linkStyle">driver</a>
+        <a href="#" className="linkStyle"><Link to='/driver'>Driver</Link></a>
         <a href="#" className="linkStyle">rider</a>
         <a href="#" className="linkStyle">log in</a>
       </div>

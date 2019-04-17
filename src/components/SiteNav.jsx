@@ -45,24 +45,30 @@ function SiteNav() {
           .flexContainer {
             display: flex;
             justify-content: space-around;
+            background: linear-gradient(to bottom, rgba(221,221,221,0.5) 0%, rgba(221,221,221,0.1) 5%);
+          }
+          p {
+            text-transform: uppercase;
+            font-family: Sans-Serif;
+            font-size: 2vw;
           }
       `}</style>
     <div>
-      <h2>Driver</h2>
+      <p>Driver</p>
         {driverLinks.map((link,index)=>
           <LinkList link={link}
                     key={index}/>
           )}
     </div>
     <div>
-      <h2>Rider</h2>
+      <p>Rider</p>
         {riderLinks.map((link,index)=>
           <LinkList link={link}
                     key={index}/>
           )}
     </div>
     <div>
-      <h2>Lyft</h2>
+      <p>Lyft</p>
         {lyftLinks.map((link,index)=>
           <LinkList link={link}
                     key={index}/>
