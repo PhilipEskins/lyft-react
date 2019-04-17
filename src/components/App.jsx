@@ -1,11 +1,12 @@
 import React from 'react';
-import lyft from '../assets/img/lyft.jpg';
 import SplashNav from './SplashNav';
+import LinkBar from './LinkBar';
 
 function App() {
   return(
     <div>
       <SplashNav/>
+      <LinkBar/>
     </div>
   );
 }

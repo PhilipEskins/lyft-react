@@ -6,29 +6,28 @@ function SplashNav() {
   const gridStyle = {
     display: 'grid',
     grid: 'repeat(2, 46vh) / repeat(3, 1fr)'
-  }
+  };
   const imgStyle = {
     gridRow: '1 / -1',
     gridColumn: '1 / -1',
     width: '100%',
     height: '100%'
-  }
+  };
   const lyftLink = {
     gridRow: '1',
     gridColumn: '1'
-  }
+  };
   const otherLinks= {
     gridRow: '1',
     gridColumn: '3',
     textAlign: 'center'
-  }
+  };
   const videoLink = {
     gridRow: '2',
-    gridColumn: '2'
-  }
-  const linkStyle = {
-    color: 'white'
-  }
+    gridColumn: '2',
+    textAlign: 'center'
+  };
+
   return(
     <div style={gridStyle}>
       <style jsx>{`
@@ -50,7 +49,7 @@ function SplashNav() {
         <a href="#" className="linkStyle">log in</a>
       </div>
       <div style={videoLink}>
-        <a href="#" style={linkStyle}>watch our story</a>
+        <a href="#" className="linkStyle">watch our story</a>
       </div>
     </div>
   );
