@@ -19,25 +19,38 @@ function SplashNav() {
   }
   const otherLinks= {
     gridRow: '1',
-    gridColumn: '3'
+    gridColumn: '3',
+    textAlign: 'center'
   }
   const videoLink = {
     gridRow: '2',
     gridColumn: '2'
   }
+  const linkStyle = {
+    color: 'white'
+  }
   return(
     <div style={gridStyle}>
+      <style jsx>{`
+          .linkStyle {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 2vw;
+            margin-left: 2vw;
+          }
+      `}</style>
       <img src={lyft} style={imgStyle}/>
       <div style={lyftLink}>
-        <a href="#">lyft</a>
+        <a className="linkStyle" href="#">lyft</a>
       </div>
       <div style={otherLinks}>
-        <a href="#">driver</a>
-        <a href="#">rider</a>
-        <a href="#">log in</a>
+        <a href="#" className="linkStyle">driver</a>
+        <a href="#" className="linkStyle">rider</a>
+        <a href="#" className="linkStyle">log in</a>
       </div>
       <div style={videoLink}>
-        <a href="#">watch our story</a>
+        <a href="#" style={linkStyle}>watch our story</a>
       </div>
     </div>
   );
