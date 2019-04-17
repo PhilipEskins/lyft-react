@@ -35,8 +35,9 @@ function SplashNav() {
             color: white;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 2vw;
+            font-size: 1vw;
             margin-left: 2vw;
+            font-family: Sans-Serif;
           }
       `}</style>
       <img src={lyft} style={imgStyle}/>
